@@ -21,8 +21,4 @@
     stroke-dashoffset: 300;
     animation: draw 2s linear forwards;
   }
-
-  .main-outline {
-    @apply outline outline-orange/45;
-  }
 }

@@ -41,7 +41,11 @@ export const AddTaskInput = () => {
   };
 
   return (
-    <div className="has-[:focus]:main-outline flex gap-3 rounded-xl border border-transparent bg-white px-5 py-4">
+    <div
+      className="flex gap-3 rounded-xl border border-transparent bg-white px-5 py-4 has-[:focus]:ring-2
+  has-[:focus]:ring-orange/45
+    "
+    >
       <svg
         className="stroke-black/40"
         width="24"
@@ -66,6 +70,7 @@ export const AddTaskInput = () => {
         value={inputValue}
         className="flex-auto bg-transparent text-base placeholder-black/60 outline-none"
         placeholder="Add a task..."
+        autoComplete="off"
       />
     </div>
   );

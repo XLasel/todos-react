@@ -43,17 +43,7 @@ export default {
         letterSpacing: '0.031em',
         fontWeight: '400',
       }],
-      'xl': ['6rem', {
-        lineHeight: '80%',
-        letterSpacing: '0.01em',
-        fontWeight: '400',
-      }],
-      'xxl': ['9rem', {
-        lineHeight: '80%',
-        letterSpacing: '0.01em',
-        fontWeight: '400',
-      }],
-      '3xl': ['12rem', {
+      'xl': ['clamp(8.5rem, 17vw, 12rem)', {
         lineHeight: '80%',
         letterSpacing: '0.01em',
         fontWeight: '400',
