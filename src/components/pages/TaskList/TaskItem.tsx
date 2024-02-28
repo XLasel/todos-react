@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, useEffect, useMemo, useRef, useState } from "react";
 
 import { useAppDispatch } from "@redux/hook";
 import {
@@ -30,7 +30,7 @@ export const TaskItem: FC<TodoType> = ({ id, text, done }) => {
     }
   }, [isEditing]);
 
-  const getColor = () => {
+  const getColor = useMemo(() => {
     const sum = id.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
     const colorNumber = sum % 4;
     switch (colorNumber) {
@@ -43,7 +43,7 @@ export const TaskItem: FC<TodoType> = ({ id, text, done }) => {
       default:
         return "hover:bg-green-600 bg-green";
     }
-  };
+  }, [id]);
 
   const adjustTextareaHeight = () => {
     const textarea = inputRef.current;
