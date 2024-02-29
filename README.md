@@ -20,7 +20,9 @@ Todos was built using the following technologies and tools:
 
 - [React](https://react.dev/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/) as the build tool
 
 ## Installation
 
