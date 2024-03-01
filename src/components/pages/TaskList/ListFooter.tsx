@@ -1,3 +1,4 @@
+import { Button } from "@/components/common/Button";
 import { useAppDispatch, useAppSelector } from "@redux/hook";
 
 import {
@@ -13,12 +14,10 @@ export const ListFooter = () => {
 
   return (
     <div className="flex items-center justify-between px-1">
-      <button
+      <Button
         onClick={() => dispatch(removeCompletedTasks())}
-        className="lg:active:scale-95 cursor-pointer rounded-lg bg-black px-4 py-1.5 text-sm text-white transition-all hover:bg-black/95"
-      >
-        Clear comleted
-      </button>
+        label="Clear comleted"
+      />
       <span id="counter" className="cursor-default px-4 py-1.5 text-sm-bold">
         <span className="font-display text-orange">{count}</span> {textCase}{" "}
         left

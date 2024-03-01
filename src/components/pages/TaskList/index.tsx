@@ -36,7 +36,7 @@ export const TaskList = () => {
         <ToggleAll />
         <FilterList />
       </div>
-      {renderTasks.length === 0 ? (
+      {!renderTasks?.length ? (
         <div className="border border-transparent px-4 py-5 text-center text-black/60">
           No tasks to show
         </div>
