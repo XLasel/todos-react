@@ -2,17 +2,17 @@ import { FC } from "react";
 
 import { cn } from "@lib";
 
-type EditIconProps = {
+type EditButtonProps = {
   onClick: () => void;
   className?: string;
 };
 
-export const EditIcon: FC<EditIconProps> = ({ onClick, className }) => {
+export const EditButton: FC<EditButtonProps> = ({ onClick, className }) => {
   return (
     <svg
       aria-label="Edit task"
       className={cn(
-        "lg:active:scale-95 lg:active:text-black/75 h-[24px] w-[24px] cursor-pointer text-black/40 transition-colors hover:text-black/55",
+        "h-[24px] w-[24px] cursor-pointer text-black/40 transition-colors hover:text-black/55 lg:active:scale-95 lg:active:text-black/75",
         className,
       )}
       fill="none"

@@ -6,7 +6,7 @@ import {
   selectCountActiveTasks,
 } from "@redux/todosSlice";
 
-export const ListFooter = () => {
+export const TasksListFooter = () => {
   const dispatch = useAppDispatch();
   const count = useAppSelector(selectCountActiveTasks);
 

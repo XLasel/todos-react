@@ -2,17 +2,17 @@ import { FC } from "react";
 
 import { cn } from "@lib";
 
-type DeleteIconProps = {
+type DeleteButtonProps = {
   onClick: () => void;
   className?: string;
 };
 
-export const DeleteIcon: FC<DeleteIconProps> = ({ onClick, className }) => {
+export const DeleteButton: FC<DeleteButtonProps> = ({ onClick, className }) => {
   return (
     <svg
       aria-label="Delete task"
       className={cn(
-        "lg:active:scale-95 lg:active:text-black/75 cursor-pointer text-black/40 transition-colors hover:text-black/55",
+        "cursor-pointer text-black/40 transition-colors hover:text-black/55 lg:active:scale-95 lg:active:text-black/75",
         className,
       )}
       onClick={onClick}

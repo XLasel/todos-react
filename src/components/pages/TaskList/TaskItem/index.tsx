@@ -6,8 +6,8 @@ import { toggleTask, deleteTask, TodoType } from "@redux/todosSlice";
 import { cn } from "@lib";
 
 import { Checkbox } from "@components/common/Checkbox";
-import { EditIcon } from "@components/common/EditIcon";
-import { DeleteIcon } from "@components/common/DeleteIcon";
+import { EditButton } from "@components/common/EditButton";
+import { DeleteButton } from "@/components/common/DeleteButton";
 import { TaskEditor } from "./TaskEditor";
 
 export const TaskItem: FC<TodoType> = ({ id, text, done }) => {
@@ -74,14 +74,14 @@ export const TaskItem: FC<TodoType> = ({ id, text, done }) => {
         </span>
       )}
       <div className="flex flex-initial gap-1">
-        <EditIcon
+        <EditButton
           onClick={handleEditTask}
           className={cn("flex-auto lg:invisible", {
             "group-hover:visible": !isEditing,
             invisible: isEditing,
           })}
         />
-        <DeleteIcon
+        <DeleteButton
           onClick={handleDeleteTask}
           className={cn("flex-auto lg:invisible", {
             "group-hover:visible": !isEditing,

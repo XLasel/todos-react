@@ -11,7 +11,7 @@ import { returnActiveTab } from "@redux/tabsSlice";
 import { ToggleAll } from "./ToggleAll";
 import { FilterList } from "./FilterList";
 import { TaskItem } from "./TaskItem";
-import { ListFooter } from "./ListFooter";
+import { TasksListFooter } from "./TasksListFooter";
 
 export const TaskList = () => {
   const activeTab = useAppSelector(returnActiveTab);
@@ -47,7 +47,7 @@ export const TaskList = () => {
           ))}
         </ul>
       )}
-      <ListFooter />
+      <TasksListFooter />
     </section>
   );
 };
