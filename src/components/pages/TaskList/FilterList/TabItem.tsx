@@ -45,8 +45,8 @@ export const TabItem: FC<TabItemProps> = ({ id, label }) => {
   };
 
   return (
-    <a onClick={handleTabClick} id={id} className={className}>
+    <button onClick={handleTabClick} id={id} className={className}>
       {label}
-    </a>
+    </button>
   );
 };
